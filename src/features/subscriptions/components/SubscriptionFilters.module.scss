@@ -1,0 +1,25 @@
+@use 'tools' as *;
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: px-to-rem(16px);
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: px-to-rem(4px);
+    min-width: px-to-rem(192px);
+
+    label {
+        font-size: px-to-rem(13px);
+        font-weight: 600;
+        color: var(--text-muted);
+    }
+
+    @include mobile {
+        flex: 1 1 100%;
+    }
+}

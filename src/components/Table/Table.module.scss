@@ -1,0 +1,126 @@
+@use 'tools' as *;
+
+.wrapper {
+    overflow-x: auto;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background-color: var(--surface);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: px-to-rem(14px);
+
+    th,
+    td {
+        padding: px-to-rem(10px) px-to-rem(14px);
+        text-align: left;
+        border-bottom: 1px solid var(--border);
+        white-space: nowrap;
+    }
+
+    th {
+        font-weight: 600;
+        color: var(--text-muted);
+        background-color: var(--surface-muted);
+    }
+
+    tbody tr {
+        &:hover {
+            background-color: var(--surface-hover);
+        }
+
+        &:last-child td {
+            border-bottom: none;
+        }
+    }
+
+    .alignRight {
+        text-align: right;
+    }
+
+    .empty {
+        padding: px-to-rem(32px);
+        text-align: center;
+        color: var(--text-muted);
+    }
+}
+
+.sortButton {
+    display: inline-flex;
+    align-items: center;
+    gap: px-to-rem(6px);
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover {
+        color: var(--text);
+    }
+}
+
+.sortIcon {
+    flex-shrink: 0;
+    transition:
+    transform 150ms ease,
+    opacity 150ms ease;
+
+    &[data-direction='desc'] {
+        transform: rotate(180deg);
+    }
+
+    &[data-direction='none'] {
+        opacity: 0.3;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        transition: none;
+    }
+}
+
+@include mobile {
+    .wrapper {
+        border: none;
+        background-color: transparent;
+    }
+
+    .table {
+        thead {
+            display: none;
+        }
+
+        tbody,
+        tr,
+        td {
+            display: block;
+        }
+
+        tr {
+            margin-bottom: px-to-rem(12px);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            background-color: var(--surface);
+        }
+
+        td {
+            display: flex;
+            justify-content: space-between;
+            gap: px-to-rem(16px);
+            white-space: normal;
+
+            &::before {
+                content: attr(data-label);
+                font-weight: 600;
+                color: var(--text-muted);
+            }
+
+            &.empty::before {
+                content: none;
+            }
+        }
+    }
+}

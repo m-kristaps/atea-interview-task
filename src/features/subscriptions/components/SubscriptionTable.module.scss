@@ -1,0 +1,24 @@
+@use 'tools' as *;
+
+.badge {
+    display: inline-block;
+    padding: px-to-rem(2px) px-to-rem(8px);
+    border-radius: 999px;
+    font-size: px-to-rem(12px);
+    font-weight: 600;
+
+    &.active {
+        color: var(--success);
+        background-color: var(--success-bg);
+    }
+
+    &.expired {
+        color: var(--text-muted);
+        background-color: var(--surface-muted);
+    }
+
+    &.suspended {
+        color: var(--warning);
+        background-color: var(--warning-bg);
+    }
+}

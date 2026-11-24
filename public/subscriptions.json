@@ -1,0 +1,155 @@
+[
+  {
+    "id": "sub-001",
+    "customerName": "Another company",
+    "productName": "Microsoft 365",
+    "status": "active",
+    "quantity": 120,
+    "monthlyCost": 4320.0,
+    "renewalDate": "2027-03-01"
+  },
+  {
+    "id": "sub-002",
+    "customerName": "Another company",
+    "productName": "Azure",
+    "status": "active",
+    "quantity": 6,
+    "monthlyCost": 1104.6,
+    "renewalDate": "2027-01-15"
+  },
+  {
+    "id": "sub-003",
+    "customerName": "Another company",
+    "productName": "Adobe",
+    "status": "expired",
+    "quantity": 15,
+    "monthlyCost": 314.85,
+    "renewalDate": "2026-09-30"
+  },
+  {
+    "id": "sub-004",
+    "customerName": "Another company",
+    "productName": "Microsoft 365",
+    "status": "suspended",
+    "quantity": 120,
+    "monthlyCost": 240.0,
+    "renewalDate": "2026-12-10"
+  },
+  {
+    "id": "sub-005",
+    "customerName": "Baltic company",
+    "productName": "Microsoft 3655",
+    "status": "active",
+    "quantity": 250,
+    "monthlyCost": 14250.0,
+    "renewalDate": "2027-06-30"
+  },
+  {
+    "id": "sub-006",
+    "customerName": "Baltic company",
+    "productName": "Microsoft Defender",
+    "status": "active",
+    "quantity": 250,
+    "monthlyCost": 1297.5,
+    "renewalDate": "2027-06-30"
+  },
+  {
+    "id": "sub-007",
+    "customerName": "Baltic company",
+    "productName": "Adobe",
+    "status": "expired",
+    "quantity": 4,
+    "monthlyCost": 247.96,
+    "renewalDate": "2026-08-01"
+  },
+  {
+    "id": "sub-008",
+    "customerName": "Baltic company",
+    "productName": "Zoom",
+    "status": "suspended",
+    "quantity": 30,
+    "monthlyCost": 599.7,
+    "renewalDate": "2026-11-28"
+  },
+  {
+    "id": "sub-009",
+    "customerName": "Riga Company",
+    "productName": "Github",
+    "status": "active",
+    "quantity": 45,
+    "monthlyCost": 945.0,
+    "renewalDate": "2027-02-14"
+  },
+  {
+    "id": "sub-010",
+    "customerName": "Riga Company",
+    "productName": "Vscode",
+    "status": "active",
+    "quantity": 30,
+    "monthlyCost": 2337.0,
+    "renewalDate": "2027-05-01"
+  },
+  {
+    "id": "sub-011",
+    "customerName": "Riga Company",
+    "productName": "Jira",
+    "status": "active",
+    "quantity": 45,
+    "monthlyCost": 391.05,
+    "renewalDate": "2027-01-01"
+  },
+  {
+    "id": "sub-012",
+    "customerName": "Riga Company",
+    "productName": "Azure",
+    "status": "active",
+    "quantity": 12,
+    "monthlyCost": 72.6,
+    "renewalDate": "2026-12-20"
+  },
+  {
+    "id": "sub-013",
+    "customerName": "Some company",
+    "productName": "Microsoft 365",
+    "status": "expired",
+    "quantity": 18,
+    "monthlyCost": 226.8,
+    "renewalDate": "2026-05-31"
+  },
+  {
+    "id": "sub-014",
+    "customerName": "Some company",
+    "productName": "Adobe",
+    "status": "expired",
+    "quantity": 3,
+    "monthlyCost": 269.97,
+    "renewalDate": "2026-07-15"
+  },
+  {
+    "id": "sub-015",
+    "customerName": "Energy Company",
+    "productName": "Microsoft Dynamics",
+    "status": "active",
+    "quantity": 10,
+    "monthlyCost": 1050.0,
+    "renewalDate": "2027-04-01"
+  },
+  {
+    "id": "sub-016",
+    "customerName": "Energy Company",
+    "productName": "Windows XP",
+    "status": "suspended",
+    "quantity": 25,
+    "monthlyCost": 349.75,
+    "renewalDate": "2026-12-31"
+  },
+  {
+    "id": "sub-017",
+    "customerName": "Energy Company",
+    "productName": "Jira",
+    "status": "expired",
+    "quantity": 1,
+    "monthlyCost": 49.99,
+    "renewalDate": "2026-10-01"
+  }
+]

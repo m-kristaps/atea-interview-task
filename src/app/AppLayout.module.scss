@@ -1,0 +1,42 @@
+@use 'tools' as *;
+
+.layout {
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: px-to-rem(12px);
+    padding: px-to-rem(14px) px-to-rem(24px);
+    border-bottom: 1px solid var(--border);
+    background-color: var(--surface);
+
+    @include mobile {
+        padding: px-to-rem(16px);
+    }
+}
+
+.title {
+    margin: 0;
+    font-size: px-to-rem(18px);
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: px-to-rem(12px);
+    font-size: px-to-rem(14px);
+}
+
+.content {
+    max-width: px-to-rem(1152px);
+    margin: 0 auto;
+    padding: px-to-rem(24px);
+
+    @include mobile {
+        padding: px-to-rem(16px);
+    }
+}

@@ -1,0 +1,7 @@
+@use 'tools' as *;
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: px-to-rem(20px);
+}

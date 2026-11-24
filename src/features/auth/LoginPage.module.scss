@@ -1,0 +1,50 @@
+@use 'tools' as *;
+
+.page {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    padding: px-to-rem(16px);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: px-to-rem(8px);
+    width: 100%;
+    max-width: px-to-rem(352px);
+    padding: px-to-rem(32px);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background-color: var(--surface);
+    box-shadow: var(--shadow);
+
+    h1 {
+        margin: 0;
+        font-size: px-to-rem(22px);
+    }
+
+    label {
+        font-size: px-to-rem(14px);
+        font-weight: 600;
+    }
+
+    input {
+        margin-bottom: px-to-rem(8px);
+    }
+
+    button {
+        margin-top: px-to-rem(8px);
+    }
+}
+
+.subtitle {
+    margin: 0 0 px-to-rem(16px);
+    color: var(--text-muted);
+}
+
+.error {
+    margin: 0;
+    font-size: px-to-rem(14px);
+    color: var(--danger);
+}

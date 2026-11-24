@@ -1,0 +1,28 @@
+@use 'tools' as *;
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(px-to-rem(192px), 1fr));
+    gap: px-to-rem(16px);
+}
+
+.card {
+    padding: px-to-rem(16px) px-to-rem(20px);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background-color: var(--surface);
+}
+
+.label {
+    margin: 0;
+    font-size: px-to-rem(13px);
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+.value {
+    margin: px-to-rem(4px) 0 0;
+    font-size: px-to-rem(26px);
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+}
